@@ -6,4 +6,4 @@
 - 🔗 [Website] [LinkedIn](https://linkedin.com/in/etizaz7), [Github](http://github.com/etizaz98), [Upwork](https://www.upwork.com/freelancers/~01f14beae4156a94f1)
 
 ## Education
-* Bachelor’s in [Software Engineering] from [University of Engineering and Technolgy Taxila](https://www.uettaxila.edu.pk/)  2011 - 2015
+* Bachelor’s in Software Engineering from [University of Engineering and Technolgy Taxila](https://www.uettaxila.edu.pk/)  2011 - 2015
