@@ -11,8 +11,22 @@
 
 ## Projects
 ### Cassandra Optimization
-  - Create a lambda function to optimize cassandra by adding the retention period of 30 days and moving rest of data to separate database.
+  - Created a lambda function to optimize mongodb by adding the retention period of 30 days and moving rest of data to separate database.
   - Added the cronjob which runs daily to send data older than 30 days to backup db.
   - Added indexing to optimize query which results in normal query time from 30 seconds to 5 seconds
   - Updated node_modules to the latest packages and resolved dependencies.
   - Skills: Node.JS, AWS Lambda, Apache Cassandra, Cronjob.
+
+### Mongodb Optimization
+  - Created a lambda function to optimize mongodb by adding the retention period of 30 days and moving rest of data to separate database.
+  - Added the cronjob which runs daily to send data older than 30 days to backup db.
+  - Added indexing to optimize query which results in normal query time from 1 minute to 15 seconds
+  - Updated node_modules to the latest packages and resolved dependencies.
+  - Skills: Node.JS, AWS Lambda, Mongod Atlas, Cronjob.
+
+### Pipeline for continuos integration
+  - Created a github pipeline which runs on every code commit
+  - Pipeline create versions on every push and push on Amazon ECR which was implemented using github workflows.
+  - Added a logic which pulls the latest versiond image from aws and deploy on our server 
+  - Skills: Node.JS, Docker, AWS ECR, Github workflows.
+  - [Repository](https://github.com/etizaz98/pipelinedemo)
