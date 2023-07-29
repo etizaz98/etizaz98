@@ -25,8 +25,14 @@
   - Skills: Node.JS, AWS Lambda, Mongod Atlas, Cronjob.
 
 ### Pipeline for continuos integration
-  - Created a github pipeline which runs on every code commit
+  - Created a github pipeline which runs on every code commit.
   - Pipeline create versions on every push and push on Amazon ECR which was implemented using github workflows.
-  - Added a logic which pulls the latest versiond image from aws and deploy on our server 
+  - Added a logic which pulls the latest versiond image from aws and deploy on our server.
   - Skills: Node.JS, Docker, AWS ECR, Github workflows.
   - [Repository](https://github.com/etizaz98/pipelinedemo)
+
+### Leza
+  - A cloud-based security gateway for application services and APIs; provides a modern security access platform for all cloud-based and legacy on-prem apps.
+  - Used passport oauth2 starategy.
+  - Used for authenticatuin and authorization of microservices.
+  - Skills: Node.JS, Docker, Kubernetes, React, Rabbitmq, Mongodb,Ory/hydra.
