@@ -1,4 +1,4 @@
-- 👋 Hi, Etizaz Ahsan.
+- 👋 Hi, I’m Etizaz Ahsan.
 - 💼 Senior Full Stack Engineer | Node.js | AWS
 - 👀 Goal: Customer Satisfaction
 - 💼 Senior software engineer with bachelors degree in software engineering and more than 7 years of professional experience in Node.js and more than 5 years of experience in react and devops 
