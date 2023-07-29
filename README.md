@@ -35,4 +35,11 @@
   - A cloud-based security gateway for application services and APIs; provides a modern security access platform for all cloud-based and legacy on-prem apps.
   - Used passport oauth2 starategy.
   - Used for authenticatuin and authorization of microservices.
-  - Skills: Node.JS, Docker, Kubernetes, React, Rabbitmq, Mongodb,Ory/hydra.
+  - Skills: Node.JS, Docker, Kubernetes, React, Rabbitmq, Mongodb,Ory/hydra, Stripe.
+
+### Turing Insights
+  - Realtime trucking weight & motion tracking, analytics calculation & fleet management.
+  - Data is sent to kafka and then logic is applied on data for analytics.
+  - Skills: Node.JS, Docker, Kubernetes, React, Rabbitmq, Mongodb,Stripe,Nest.js,Next.js,ApacheKafka,Redis.
+
+
