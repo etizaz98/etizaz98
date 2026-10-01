@@ -1,47 +1,58 @@
-- 👋 Hi, I’m Etizaz Ahsan.
-- 💼 Senior Full Stack Engineer | Node.js | AWS
-- 👀 Goal: Customer Satisfaction
-- 💼 Senior software engineer with bachelors degree in software engineering and more than 8 years of professional experience in Node.js and more than 5 years of experience in react and devops 
-- 🏆 Database optimization, problem solving, traveling
-- 🔗 [LinkedIn](https://linkedin.com/in/etizaz7), [Github](http://github.com/etizaz98), [Upwork](https://www.upwork.com/freelancers/~01f14beae4156a94f1)
+# Etizaz Ahsan
 
-## Education
-* Bachelor’s in Software Engineering from [University of Engineering and Technolgy Taxila](https://www.uettaxila.edu.pk/)  2011 - 2015
+**Lead Solutions Architect** at [Operanex](https://operanex.com) · DevOps & Cloud · Islamabad, Pakistan · [LinkedIn](https://www.linkedin.com/in/etizaz7)
 
+I've spent 10+ years building and running production systems, from Node.js backends to AWS and Kubernetes infrastructure. Today I lead architecture and infrastructure for client platforms and still ship backend code. I'm also the main technical contact on those projects: requirements, scoping, estimates and delivery plans.
 
-## Projects
-### Cassandra Optimization
-  - Created a lambda function to optimize mongodb by adding the retention period of 30 days and moving rest of data to separate database.
-  - Added the cronjob which runs daily to send data older than 30 days to backup db.
-  - Added indexing to optimize query which results in normal query time from 30 seconds to 5 seconds
-  - Updated node_modules to the latest packages and resolved dependencies.
-  - Skills: Node.JS, AWS Lambda, Apache Cassandra, Cronjob.
+## Stack
 
-### Mongodb Optimization
-  - Created a lambda function to optimize mongodb by adding the retention period of 30 days and moving rest of data to separate database.
-  - Added the cronjob which runs daily to send data older than 30 days to backup db.
-  - Added indexing to optimize query which results in normal query time from 1 minute to 15 seconds
-  - Updated node_modules to the latest packages and resolved dependencies.
-  - Skills: Node.JS, AWS Lambda, Mongod Atlas, Cronjob.
+- **Cloud & IaC:** AWS (EKS, RDS, EC2, S3, ECR, SQS, IAM) · OpenTofu · Pulumi · Ansible
+- **Containers & CI/CD:** Kubernetes · Docker · Helm · GitHub Actions · Argo CD (GitOps)
+- **Backend:** Node.js · TypeScript · Bun · NestJS · Express · tRPC · Socket.IO
+- **Data & streaming:** PostgreSQL/PostGIS · Redis · Cassandra · MongoDB · MySQL · Kafka · Redpanda · MQTT
+- **Frontend:** SvelteKit · React · Next.js
 
-### Pipeline for continuos integration
-  - Created a github pipeline which runs on every code commit.
-  - Pipeline create versions on every push and push on Amazon ECR which was implemented using github workflows.
-  - Added a logic which pulls the latest versiond image from aws and deploy on our server.
-  - Skills: Node.JS, Docker, AWS ECR, Github workflows.
-  - [Repository](https://github.com/etizaz98/pipelinedemo)
+## Highlights
 
-### Leza
-  - A cloud-based security gateway for application services and APIs; provides a modern security access platform for all cloud-based and legacy on-prem apps.
-  - Used passport oauth2 starategy.
-  - Used for authenticatuin and authorization of microservices.
-  - Skills: Node.JS, Docker, Kubernetes, React, Rabbitmq, Mongodb,Ory/hydra, Stripe.
-  - [Website](https://admin.simpluscloud.com)
+- **Pulumi → OpenTofu:** migrated all dev and prod infrastructure (EKS, ECR, networking, IAM, Kubernetes deployments) and retired the Pulumi stacks.
+- **CI/CD:** built GitHub Actions pipelines (build, test, deploy) with OIDC auth to AWS; OpenTofu applies deploy to dev on merge and to prod on release.
+- **GitOps on bare metal:** automated provisioning with Ansible and deployed an on-prem EKS cluster running Argo CD and Mattermost, plus the Kafka broker the dev environment uses.
+- **Reliability:** recovered EKS clusters from node failures and tuned node sizing, memory limits and replica counts to stop thrashing; set up monitoring and alerting.
+- **Cost & tooling:** moved RDS storage from gp2 to gp3; evaluated Redpanda vs. Confluent for Kafka on cost, scalability and operational fit.
+- **Database tuning (earlier work):** indexing cut query times on Cassandra (30 s → 5 s) and MongoDB Atlas (1 min → 15 s); added a Lambda function for 30-day data retention, with a daily cron job moving older data to a backup database.
 
-### Turing Insights
-  - Realtime trucking weight & motion tracking, analytics calculation & fleet management.
-  - Data is sent to kafka and then logic is applied on data for analytics.
-  - Skills: Node.JS, Docker, Kubernetes, React, Rabbitmq, Mongodb,Stripe,Nest.js,Next.js,ApacheKafka,Redis.
-  - [Website](https://ti.simpluscloud.com)
+## Selected work
 
+**Kimax Digital** — multi-tenant fleet telematics for heavy vehicles (Operanex, 2024–present). Architecture and DevOps lead. Provisioned the production Redpanda cluster and worked on backend route/trip state machines and Teltonika device integration.
 
+```text
+MQTT devices + Teltonika trackers
+  → Kafka (Redpanda)
+  → ~25 workers
+  → live map · trips · REST API
+```
+
+**Turing Insights** — real-time vehicle telemetry (glasc.io, 2020–2024). Built the backend and owned its DevOps on Kubernetes; kept leading it after being promoted to technical lead.
+
+```text
+Vehicle position (every 5 s)
+  → Cassandra
+  → events (PostgreSQL) + state (Redis)
+  → clients via Socket.IO
+```
+
+**Leza** — centralised identity service (glasc.io, 2019–2024). Led backend and architecture (Express proxy, Passport OAuth2, Ory Hydra for tokens, MongoDB audit logs); deployed and operated it on AWS.
+
+**Visum** — manufacturing analytics and cost-cutting recommendations for a Unilever factory (glasc.io, 2020). Built the KPI analytics APIs on PostgreSQL (Sequelize + raw SQL), with Socket.IO live updates.
+
+**[pipelinedemo](https://github.com/etizaz98/pipelinedemo)** — CI/CD demo repo: GitHub Actions → versioned images → Amazon ECR → deploy.
+
+## Career
+
+- **Oct 2024 – present** · Lead Software Solution Architect · [Operanex](https://operanex.com) (remote)
+- **Jan 2022 – Oct 2024** · Technical Lead · glasc.io — led the development team
+- **Jan 2019 – Dec 2021** · Senior Software Engineer · glasc.io — mentored junior engineers
+- **Feb – Dec 2018** · MEAN Stack Developer · Aristostar, UAE
+- **Sep 2015 – Jan 2018** · Frontend Developer (trainee) → Node.js Developer · uExel
+
+**Education:** BS Computer Software Engineering, University of Engineering and Technology, Taxila (2011–2015)
